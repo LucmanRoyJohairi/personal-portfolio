@@ -8,6 +8,7 @@ export interface Project {
   techStack: string[];
   githubUrl: string;
   liveUrl?: string;
+  image?: string;
 }
 
 export const PROFILE = {
