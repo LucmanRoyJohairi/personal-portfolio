@@ -1,19 +1,30 @@
 # Personal Developer Portfolio
 
-My personal portfolio website showcasing full-stack engineering case studies, system architectures, and core technical capabilities.
+My personal developer portfolio showcasing full-stack engineering case studies, system architectures, and core technical capabilities.
 
-🔗 **Live Site:** [https://royjohairil.netlify.app](https://netlify.app)
+[![Live Demo](https://shields.io/badge/Live_Demo-royjohairil.netlify.app-00C7B7?style=for-the-badge&logo=netlify&logoColor=white)](https://royjohairil.netlify.app/)
+
+
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
+![TypeScript](https://shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![Tailwind CSS](https://shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
 
 ![Portfolio Preview](./public/og-image.png)
 
-## Tech Stack
+## ✨ Highlights
+
+- **Static-First Performance:** Pre-rendered case study pages (`generateStaticParams`), optimized `next/image` assets, and zero layout shift with `next/font`.
+- **Interactive Dark-Slate UI:** Custom cursor-tracking `SpotlightCard` components, smooth CSS micro-animations, and accessible `shadcn/ui` primitives.
+- **Data-Driven Architecture:** All projects, metrics, and tech ecosystems live in a single strongly-typed `portfolio.ts` config for effortless updates.
+- **SEO & Social Ready:** Dynamic per-project OpenGraph metadata, custom favicons, and `1200×630` preview cards.
+
+## 🛠️ Tech Stack
 
 - **Framework:** Next.js (App Router) & TypeScript
-- **Styling & UI:** Tailwind CSS, shadcn/ui, Lucide Icons
-- **Performance:** Static Site Generation (`SSG`), `next/font`, and `next/image` optimization
-- **Deployment:** Vercel
+- **Styling & UI:** Tailwind CSS v4, shadcn/ui, Lucide Icons
+- **Hosting & CI/CD:** Netlify
 
-## Project Structure
+## 📂 Project Structure
 
 ```text
 src/
@@ -22,17 +33,30 @@ src/
 │   ├── page.tsx                # Main landing view (Hero, Projects, Principles, Stack, Contact)
 │   └── projects/
 │       ├── page.tsx            # Full project archive
-│       └── [slug]/page.tsx     # Static case-study pages
+│       └── [slug]/page.tsx     # Static case-study pages with dynamic metadata
 ├── components/                 # Modular UI sections and interactive Spotlight cards
 └── data/
     └── portfolio.ts            # Strongly-typed content configuration
 ```
 
-## Local Development
+## 🚀 Local Development
 
-```bash
-npm install
-npm run dev
-```
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com
+   cd personal-portfolio
+   ```
+
+2. **Install dependencies and start the dev server:**
+   ```bash
+   npm install
+   npm run dev
+   ```
 
 Open [http://localhost:3000](http://localhost:3000) to view the site locally.
+
+## 📬 Contact
+
+- **Portfolio:** [sample.netlify.app](https://sample.netlify.app)
+- **GitHub:** [@yourusername](https://github.com)
+- **LinkedIn:** [://linkedin.com](https://://linkedin.com)
