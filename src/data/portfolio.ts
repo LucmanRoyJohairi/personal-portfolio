@@ -12,14 +12,14 @@ export interface Project {
 }
 
 export const PROFILE = {
-  name: "Your Name",
+  name: "Roy Johairi Lucman",
   role: "Full-Stack Developer | Software Engineer",
   experience: "4+ years of experience",
   tagline:
     "I build scalable web applications, automated payment systems, and AI-powered workflows with clean architecture and reliable end-to-end delivery.",
-  email: "you@example.com",
-  github: "https://github.com",
-  linkedin: "https://linkedin.com",
+  email: "lucman.royjohairi.com",
+  github: "https://github.com/LucmanRoyJohairi",
+  linkedin: "https://www.linkedin.com/in/royjohairilucman/",
   availability: "Open to Full-Stack & Backend roles",
 };
 
@@ -34,56 +34,63 @@ export const TECH_STACK: Record<string, string[]> = {
 
 export const PROJECTS: Project[] = [
   {
-    slug: "automated-payment-gateway",
-    title: "Multi-Currency & Crypto Payment Engine",
+    slug: "obsidian-studio",
+    title: "Obsidian Studio",
     summary:
-      "Automated payment processing service handling fiat webhooks and on-chain TRC20/ERC20 settlement verification.",
+      "Dark-mode digital asset storefront featuring Clerk OAuth authentication and automated on-chain USDT (TRC20) payment verification.",
     problem:
-      "Merchants needed automated invoice reconciliation without manual wallet checks or race-condition double credits.",
+      "Digital creators needed a direct, non-custodial storefront capable of verifying crypto payments on-chain without fake token spoofing or replay attacks.",
     architecture:
-      "Built an event-driven FastAPI & Node.js worker pipeline backed by PostgreSQL with idempotency keys and Redis distributed locks.",
+      "Built a full-stack Next.js App Router application backed by Neon Serverless PostgreSQL and Prisma 7, querying the TronGrid API via TronWeb to validate TRC20 Transfer events.",
     highlights: [
-      "Zero duplicate ledger entries under concurrent webhook retries",
-      "Real-time transaction status updates via WebSockets",
-      "Automated merchant payout batching and audit logs",
+      "Server-side TronGrid verification validating official USDT smart contracts, exact recipient wallets, and minimum payment thresholds",
+      "Idempotent order recording via database-level unique TXID constraints to prevent replay attacks",
+      "Frictionless Discord/Google SSO via Clerk with real-time ownership detection and a protected digital download library",
     ],
-    techStack: ["Next.js", "FastAPI", "PostgreSQL", "Redis", "Docker"],
-    githubUrl: "https://github.com/payment-engine",
-    liveUrl: "https://example.com",
+    techStack: ["Next.js", "TypeScript", "Tailwind CSS", "Prisma", "PostgreSQL", "Clerk", "TRON"],
+    githubUrl: "https://github.com/LucmanRoyJohairi/obsidian-storefront",
+    liveUrl: "https://obsidian-storefront.vercel.app/",
+    image: "/projects/obsidian-studio.png",
   },
+
   {
-    slug: "enterprise-rag-assistant",
-    title: "Internal Docs RAG Knowledge Assistant",
+    slug: "axon",
+    title: "Axon",
     summary:
-      "Context-aware AI search and Q&A platform indexing technical documentation and support runbooks.",
+      "AI-powered support ticket management and triage platform featuring automated priority breakdowns, real-time status tracking, and Supabase authentication.",
     problem:
-      "Engineering teams spent hours searching fragmented Notion pages and PDFs for deployment and API specs.",
+      "Support teams needed a centralized, secure dashboard to triage high ticket volumes with instant AI categorization and frictionless demo access without compromising tenant data isolation.",
     architecture:
-      "Implemented semantic chunking, pgvector embeddings, and hybrid keyword-vector retrieval with strict source citations.",
+      "Built a Next.js 14 App Router frontend paired with a FastAPI REST backend, enforcing strict end-to-end type safety with TypeScript and Pydantic schemas alongside Supabase Auth and PostgreSQL Row-Level Security (RLS).",
     highlights: [
-      "Sub-1.5s streaming responses with inline document citations",
-      "Role-based access filtering before vector retrieval",
-      "Automated ingestion pipeline triggered on doc updates",
+      "Database-level data isolation enforced via Supabase Row-Level Security (RLS) alongside frictionless guest sign-in for instant onboarding",
+      "Decoupled API service layer mirroring FastAPI Pydantic schemas, enabling seamless switching between mock data and live REST endpoints",
+      "Responsive dashboard with AI-processed ticket analytics, priority breakdowns, skeleton loading states, and multi-criteria filtering",
     ],
-    techStack: ["Next.js", "TypeScript", "Python", "pgvector", "Tailwind CSS"],
-    githubUrl: "https://github.com/rag-assistant",
+    techStack: ["Next.js", "FastAPI", "TypeScript", "Python", "Supabase", "PostgreSQL", "Tailwind CSS"],
+    githubUrl: "https://github.com/LucmanRoyJohairi/axon",
+    liveUrl: "https://axon-ticketing-system-two.vercel.app/dashboard",
+    image: "/projects/axon.png",
   },
+
   {
-    slug: "saas-analytics-dashboard",
-    title: "Real-Time SaaS Operations Dashboard",
+    slug: "the-marketplace",
+    title: "The Marketplace",
     summary:
-      "High-contrast dark-mode analytics portal for monitoring API usage, billing tiers, and customer health.",
+      "Modern peer-to-peer local marketplace inspired by Facebook Marketplace, featuring Stripe Connect payouts, real-time listing previews, and automated email notifications.",
     problem:
-      "Operations teams lacked real-time visibility into API rate limits and subscription churn triggers.",
+      "Local peer-to-peer classifieds often lack integrated payment protection and streamlined seller onboarding, forcing buyers and sellers into fragmented off-platform transactions.",
     architecture:
-      "Next.js App Router frontend with server-side aggregated PostgreSQL materialized views and Stripe billing sync.",
+      "Built a full-stack Next.js and React 19 application styled with Tailwind CSS and shadcn/ui, backed by Supabase for persistence, Stripe Connect for direct buyer-to-seller payouts, and Resend for transactional emails.",
     highlights: [
-      "99/100 Lighthouse performance score with server-rendered charts",
-      "Granular team RBAC and audit trail export",
-      "Automated Stripe webhook sync for instant plan upgrades",
+      "Integrated Stripe Connect onboarding and direct card checkout with automated bank payouts for verified sellers",
+      "Interactive listing creation studio featuring a real-time live buyer preview, condition tagging, and location-based category filtering",
+      "Built-in buyer-to-seller inquiry system powered by Resend for instant transactional email delivery",
     ],
-    techStack: ["React", "Next.js", "PostgreSQL", "Prisma", "Stripe"],
-    githubUrl: "https://github.com/saas-dashboard",
-    liveUrl: "https://example.com",
+    techStack: ["Next.js", "React 19", "TypeScript", "Tailwind CSS", "shadcn/ui", "Supabase", "Stripe", "Resend"],
+    githubUrl: "https://github.com/LucmanRoyJohairi/the-marketplace",
+    liveUrl: "https://the-social-marketplace.vercel.app/",
+    image: "/projects/the-marketplace.png",
   },
+
 ];
