@@ -17,7 +17,7 @@ export const PROFILE = {
   experience: "4+ years of experience",
   tagline:
     "I build scalable web applications, automated payment systems, and AI-powered workflows with clean architecture and reliable end-to-end delivery.",
-  email: "lucman.royjohairi.com",
+  email: "lucman.royjohairi@gmail.com",
   github: "https://github.com/LucmanRoyJohairi",
   linkedin: "https://www.linkedin.com/in/royjohairilucman/",
   availability: "Open to Full-Stack & Backend roles",
