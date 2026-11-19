@@ -39,24 +39,6 @@ src/
     └── portfolio.ts            # Strongly-typed content configuration
 ```
 
-## 🚀 Local Development
+---
 
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com
-   cd personal-portfolio
-   ```
-
-2. **Install dependencies and start the dev server:**
-   ```bash
-   npm install
-   npm run dev
-   ```
-
-Open [http://localhost:3000](http://localhost:3000) to view the site locally.
-
-## 📬 Contact
-
-- **Portfolio:** [sample.netlify.app](https://sample.netlify.app)
-- **GitHub:** [@yourusername](https://github.com)
-- **LinkedIn:** [://linkedin.com](https://://linkedin.com)
+*Designed and built from scratch to showcase production full-stack engineering work. View the live site at [https://royjohairil.netlify.app/](https://royjohairil.netlify.app/).*
