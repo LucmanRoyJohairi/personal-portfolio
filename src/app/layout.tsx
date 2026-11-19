@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components/navbar";
+import { PROFILE } from "@/data/portfolio";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -13,11 +14,56 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+
 export const metadata: Metadata = {
-  title: "Roy Johairi Lucman — Full-Stack Software Engineer",
+  metadataBase: new URL("https://yourdomain.com"), // Replace with your Vercel or custom domain
+  title: {
+    default: `${PROFILE.name} — Full-Stack Software Engineer`,
+    template: `%s | ${PROFILE.name}`,
+  },
   description:
-    "Full-Stack Developer with 4+ years of experience building scalable web applications, automated payment systems, and AI workflows.",
+    "Full-Stack Software Engineer with 4+ years of experience building scalable web applications, automated payment gateways, and AI workflows.",
+  keywords: [
+    PROFILE.name,
+    "Full-Stack Developer",
+    "Software Engineer",
+    "Next.js",
+    "TypeScript",
+    "FastAPI",
+    "PostgreSQL",
+    "AI Workflows",
+  ],
+  authors: [{ name: PROFILE.name }],
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://yourdomain.com",
+    siteName: `${PROFILE.name} Portfolio`,
+    title: `${PROFILE.name} — Full-Stack Software Engineer`,
+    description:
+      "Full-Stack Software Engineer building scalable web applications, automated payment systems, and AI workflows.",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: `${PROFILE.name} — Full-Stack Software Engineer`,
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `${PROFILE.name} — Full-Stack Software Engineer`,
+    description:
+      "Full-Stack Software Engineer building scalable web applications, automated payment systems, and AI workflows.",
+    images: ["/og-image.png"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
+
 
 export default function RootLayout({
   children,
