@@ -14,9 +14,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Your Name — Full-Stack Software Engineer",
+  title: "Roy Johairi Lucman — Full-Stack Software Engineer",
   description:
-    "Full-Stack Developer with 4 years of experience building scalable web applications, automated payment systems, and AI workflows.",
+    "Full-Stack Developer with 4+ years of experience building scalable web applications, automated payment systems, and AI workflows.",
 };
 
 export default function RootLayout({
