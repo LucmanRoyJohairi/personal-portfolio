@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://yourdomain.com"), // Replace with your Vercel or custom domain
+  metadataBase: new URL("https://royjohairil.netlify.app"), // Replace with your Vercel or custom domain
   title: {
     default: `${PROFILE.name} — Full-Stack Software Engineer`,
     template: `%s | ${PROFILE.name}`,

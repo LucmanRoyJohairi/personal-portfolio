@@ -2,7 +2,7 @@
 
 My personal portfolio website showcasing full-stack engineering case studies, system architectures, and core technical capabilities.
 
-🔗 **Live Site:** [your-portfolio-url.vercel.app](https://vercel.app)
+🔗 **Live Site:** [https://royjohairil.netlify.app](https://netlify.app)
 
 ![Portfolio Preview](./public/og-image.png)
 
