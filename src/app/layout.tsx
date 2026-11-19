@@ -29,15 +29,15 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} dark scroll-smooth`}
     >
-      <body className="relative min-h-screen bg-zinc-950 font-sans text-zinc-100 antialiased selection:bg-emerald-500/20 selection:text-emerald-300">
-        {/* Subtle dot grid */}
-        <div className="pointer-events-none fixed inset-0 -z-10 bg-[radial-gradient(#27272a_1px,transparent_1px)] [background-size:24px_24px] [mask-image:radial-gradient(ellipse_80%_60%_at_50%_0%,#000_65%,transparent_100%)]" />
-        {/* Top ambient emerald glow */}
-        <div className="pointer-events-none fixed inset-x-0 top-0 -z-10 mx-auto h-[340px] max-w-3xl bg-emerald-500/10 blur-[120px]" />
+    <body className="relative min-h-screen bg-[#0B0F19] font-sans text-slate-100 antialiased selection:bg-sky-500/20 selection:text-sky-300">
+      {/* Soft top ambient blue/indigo light */}
+      <div className="pointer-events-none fixed inset-0 -z-10 bg-[linear-gradient(to_right,#1e293b_1px,transparent_1px),linear-gradient(to_bottom,#1e293b_1px,transparent_1px)] bg-[size:4rem_4rem] opacity-20 [mask-image:radial-gradient(ellipse_75%_50%_at_50%_0%,#000_70%,transparent_100%)]" />
 
-        <Navbar />
-        <main className="mx-auto max-w-4xl px-6 py-12">{children}</main>
-      </body>
+
+      <Navbar />
+      <main className="mx-auto max-w-4xl px-6 py-12">{children}</main>
+    </body>
+
 
     </html>
   );

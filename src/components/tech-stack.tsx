@@ -17,65 +17,68 @@ const CATEGORY_STYLES: Record<
     icon: Layout,
     iconColor: "text-sky-400",
     border: "hover:border-sky-500/40",
-    badge: "border-sky-500/20 bg-sky-500/10 text-sky-300 hover:bg-sky-500/20",
+    badge: "border-sky-500/25 bg-sky-500/10 text-sky-300 hover:bg-sky-500/20",
   },
   "Back-End": {
     icon: Server,
     iconColor: "text-emerald-400",
     border: "hover:border-emerald-500/40",
-    badge: "border-emerald-500/20 bg-emerald-500/10 text-emerald-300 hover:bg-emerald-500/20",
+    badge: "border-emerald-500/25 bg-emerald-500/10 text-emerald-300 hover:bg-emerald-500/20",
   },
   "Databases & ORM": {
     icon: Database,
     iconColor: "text-amber-400",
     border: "hover:border-amber-500/40",
-    badge: "border-amber-500/20 bg-amber-500/10 text-amber-300 hover:bg-amber-500/20",
+    badge: "border-amber-500/25 bg-amber-500/10 text-amber-300 hover:bg-amber-500/20",
   },
   "Auth & Payments": {
     icon: CreditCard,
     iconColor: "text-violet-400",
     border: "hover:border-violet-500/40",
-    badge: "border-violet-500/20 bg-violet-500/10 text-violet-300 hover:bg-violet-500/20",
+    badge: "border-violet-500/25 bg-violet-500/10 text-violet-300 hover:bg-violet-500/20",
   },
   "DevOps & Tools": {
     icon: Cloud,
     iconColor: "text-cyan-400",
     border: "hover:border-cyan-500/40",
-    badge: "border-cyan-500/20 bg-cyan-500/10 text-cyan-300 hover:bg-cyan-500/20",
+    badge: "border-cyan-500/25 bg-cyan-500/10 text-cyan-300 hover:bg-cyan-500/20",
   },
   "AI Workflows": {
     icon: Bot,
     iconColor: "text-rose-400",
     border: "hover:border-rose-500/40",
-    badge: "border-rose-500/20 bg-rose-500/10 text-rose-300 hover:bg-rose-500/20",
+    badge: "border-rose-500/25 bg-rose-500/10 text-rose-300 hover:bg-rose-500/20",
   },
 };
 
 export function TechStack() {
   return (
-    <section id="stack" className="space-y-6 py-10">
+    <section id="stack" className="space-y-6 py-8">
       <div className="space-y-1">
-        <span className="font-mono text-xs uppercase tracking-wider text-emerald-400">
+        <span className="font-mono text-xs uppercase tracking-wider text-sky-400">
           03 // Core Capabilities
         </span>
-        <h2 className="text-xl font-semibold tracking-tight text-zinc-100">
+        <h2 className="text-xl font-semibold tracking-tight text-slate-50">
           Tech Stack & Ecosystem
         </h2>
+        <p className="text-sm text-slate-400">
+          Tools and technologies I use across front-end, back-end, and AI systems.
+        </p>
       </div>
 
       <div className="grid gap-4 sm:grid-cols-2">
         {Object.entries(TECH_STACK).map(([category, skills]) => {
-          const style = CATEGORY_STYLES[category] ?? CATEGORY_STYLES["Back-End"];
+          const style = CATEGORY_STYLES[category] ?? CATEGORY_STYLES["Front-End"];
           const Icon = style.icon;
 
           return (
             <div
               key={category}
-              className={`group rounded-xl border border-zinc-800/80 bg-zinc-900/40 p-5 backdrop-blur-sm transition-all duration-300 hover:-translate-y-0.5 hover:bg-zinc-900/70 ${style.border}`}
+              className={`group rounded-xl border border-slate-800/80 bg-slate-900/50 p-5 backdrop-blur-sm transition-all duration-300 hover:-translate-y-0.5 hover:bg-slate-900/80 ${style.border}`}
             >
               <div className="mb-3.5 flex items-center gap-2">
                 <Icon className={`h-4 w-4 ${style.iconColor}`} />
-                <h3 className="font-mono text-xs font-semibold uppercase tracking-wider text-zinc-200">
+                <h3 className="font-mono text-xs font-semibold uppercase tracking-wider text-slate-200">
                   {category}
                 </h3>
               </div>
